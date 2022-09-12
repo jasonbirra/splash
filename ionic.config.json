@@ -1,0 +1,7 @@
+{
+  "name": "splashanimado",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
