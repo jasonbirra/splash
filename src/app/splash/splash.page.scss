@@ -1,0 +1,108 @@
+ion-content{
+    --background:#241dc5;
+}
+
+
+
+.tarjeta{
+    width: 50px;
+    height: 50px;
+    background-color: #241dc5;
+    font-size: 40px;
+    position: absolute;
+    top: 500px;
+    left: 230px;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    animation: Carrusel 10s linear infinite;
+}
+
+@keyframes Carrusel
+{
+    from{
+       transform: rotateY(360deg) translateZ(100px);
+       z-index: 10;
+       opacity: 0.9;
+    }
+    50%{
+        z-index: -10;        
+    }
+    to{
+        transform: rotateX(0deg) translateZ(100px) ;
+    }
+
+}
+
+
+#cuatro{
+    background-image: url(\logo_celiakos.png);    
+    background-size: cover;    
+}
+
+#tres{
+    background-image: url(\logo_celiakos.png);    
+    background-size: cover;
+    animation-delay: -1s;
+}
+
+#dos{
+    background-image: url(\logo_celiakos.png);    
+    background-size: cover;
+    animation-delay: -2s;
+}
+
+#uno{
+    background-image: url(\logo_celiakos.png);    
+    background-size: cover;
+    animation-delay: -3s;
+}
+
+#market{
+    background-image: url(\logo_celiakos.png);    
+    background-size: cover;
+    animation-delay: -4s;
+}
+
+#doc{
+    background-image: url(\logo_celiakos.png);  
+    background-size: cover;
+    animation-delay: -5s;
+}
+
+#resto{
+    background-image: url(\logo_celiakos.png);    
+    background-size: cover;
+    animation-delay: -6s;
+}
+
+#info{
+    background-image: url(\logo_celiakos.png);    
+    background-size: cover;
+    animation-delay: -7s;
+}
+
+
+.tarjeta h3{
+    color: white;
+    font-size: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 50px;
+    background-color: #241dc5;
+
+}
+
+@-webkit-keyframes scale-in-center{0%{-webkit-transform:scale(0);transform:scale(0);opacity:1}100%{-webkit-transform:scale(1);transform:scale(1);opacity:1}}@keyframes scale-in-center{0%{-webkit-transform:scale(0);transform:scale(0);opacity:1}100%{-webkit-transform:scale(1);transform:scale(1);opacity:1}}
+.container{   
+    -webkit-animation:scale-in-center 5s cubic-bezier(.25,.46,.45,.94) both;animation:scale-in-center 15s cubic-bezier(.25,.46,.45,.94) both;
+    img{
+        height: 100px;
+        margin-top: 60%;
+        
+    }  
+    
+    .texto{
+        color:#FFFFFF;
+        font-size: 45px;
+    }
+}
